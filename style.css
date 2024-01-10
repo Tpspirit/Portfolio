@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #e4c38f;
+}
+
+@keyframes nav-animate {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes overview-animate {
+  from {
+    opacity: 0;
+    transform: translateY(100px) scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* nav */
+nav {
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  width: 100%;
+  padding-top: 5px;
+  box-shadow: 0 0 black;
+  z-index: 9999;
+  box-shadow: 0 0 17px black;
+  animation: nav-animate 0.3s ease-out;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.logo {
+  padding-left: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-right: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 13px;
+  padding: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #e67e22;
+}
+
+/* container */
+.container {
+  height: 200vh;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.overview {
+  padding: 150px 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  animation: overview-animate 1s ease;
+}
+
+.overview_detail {
+  max-width: 600px;
+}
+
+.title {
+  margin: 30px 0px;
+  color: #ff5722;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.CV_btn {
+  border: none;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: #e67e22;
+  color: white;
+  font-size: 1rem;
+  margin-top: 30px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.CV_btn:hover {
+  opacity: 0.4;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 30%;
+  display: inline-block;
+  flex: none;
+  min-height: 70px;
+  box-shadow: 0 0 10px black;
+}
+
+/* skills */
+.skills {
+  width: 100%;
+  gap: 1rem;
+  align-items: center;
+  padding: 100px 50px;
+}
+
+.skills h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.skills_content {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.skills_content h3 {
+  width: 150px;
+  height: 50px;
+  border: 3px solid #009af4;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.html5,
+.css3,
+.javascript,
+.java {
+  font-size: 1.5rem;
+  padding: 10px;
+  color: #e91e63;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.html5:hover {
+  color: #f06529;
+  font-size: 1.7rem;
+}
+
+.css3:hover {
+  color: #2965f1;
+  font-size: 1.7rem;
+}
+
+.javascript:hover {
+  color: #f0db4f;
+  font-size: 1.7rem;
+}
+
+.java:hover {
+  color: #f89820;
+  font-size: 1.7rem;
+}
+
+/* projects */
+.projects {
+  padding: 100px 30px;
+}
+
+.projects h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.projects_content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+}
+
+.projects_content .item {
+  position: relative;
+  transition-duration: 0.3s;
+}
+
+.projects_content .item img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.projects_content .item:hover {
+  scale: 1.3;
+}
+
+.projects_content .item h3 {
+  font-size: 1rem;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+
+/* Contact section */
+.contact {
+  padding: 150px 30px;
+}
+
+.contact > h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact > h2 {
+  padding: 20px;
+}
+
+.contact_content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact_content form {
+  margin-top: 40px;
+  width: 50%;
+  padding: 20px;
+}
+
+.contact_content form input {
+  display: block;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.contact_textarea {
+  border: none;
+  border-radius: 20px;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.contact_content form input:focus,
+.contact_textarea:focus {
+  transition-duration: 0.3s;
+  outline: 5px solid orange;
+}
+
+.contact_content .btn {
+  border: none;
+  border-radius: 30px;
+  padding: 10px;
+  width: 130px;
+  background-color: #e67e22;
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 10px;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}

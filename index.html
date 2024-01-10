@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <nav>
+      <img class="logo" src="./assets/photos/logo.PNG" alt="logo" />
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <!-- Overview -->
+      <section id="#home" class="overview">
+        <img
+          class="avatar"
+          src="./assets/photos/avatar.jpg"
+          alt="avatar.jpeg"
+        />
+        <div class="overview_detail">
+          <h1 class="name">Hi, I'm Khoi Phan</h1>
+          <h1 class="title">Front-End Developer <br />UX/UI designer</h1>
+
+          <p>
+            I'm a front-end programmer who create professional and minimal web
+            designs that satisfy my clients
+          </p>
+          <button class="CV_btn">Download CV</button>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="skills">
+        <h1>Skills</h1>
+        <div class="skills_content">
+          <h3 class="html5">HTML5</h3>
+          <h3 class="css3">CSS3</h3>
+          <h3 class="javascript">Javascript</h3>
+          <h3 class="java">Java</h3>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="projects">
+        <h1>Projects</h1>
+        <div class="projects_content">
+          <!-- To-do list -->
+          <div class="item">
+            <a href="https://github.com/Tpspirit/To-Do-List">
+              <img src="./assets/photos/projects/todoList.png" alt="todoList"
+            /></a>
+            <h3>To-do list</h3>
+          </div>
+          <!-- Password Generator -->
+          <div class="item">
+            <a href="https://github.com/Tpspirit/Password-Generator">
+              <img
+                src="./assets/photos/projects/passwordGen.png"
+                alt="passwordGen"
+            /></a>
+            <h3>Password Generator</h3>
+          </div>
+          <!-- Calculator -->
+          <div class="item">
+            <a href="https://github.com/Tpspirit/Calculator">
+              <img
+                src="./assets/photos/projects/calculator.png"
+                alt="calculator"
+            /></a>
+            <h3>Calculator</h3>
+          </div>
+          <!-- E-Commerce -->
+          <div class="item">
+            <a href="https://github.com/Tpspirit/E-Commerce-Web">
+              <img
+                src="./assets/photos/projects/e-commerce.png"
+                alt="e-commerce"
+            /></a>
+            <h3>E-Commerce</h3>
+          </div>
+          <!-- QR Code Generator -->
+          <div class="item">
+            <a href="https://github.com/Tpspirit/QR-Code-Generator">
+              <img
+                src="./assets/photos/projects/QRcodeGen.png"
+                alt="QRcodeGenerator"
+            /></a>
+            <h3>QR Code Generator</h3>
+          </div>
+          <!-- Virtal Fitting Room UX/UI -->
+          <div class="item">
+            <a
+              href="https://www.figma.com/file/XnagiEAm4Q1xFWsUlnprhu/Virtual-Fitting-Room?type=design&mode=design&t=iOo4vLs1c8qRND04-0"
+            >
+              <img
+                src="./assets/photos/projects/virtual-fitting-room-UX.png"
+                alt="VirtualFittingRoom"
+            /></a>
+            <h3>Virtual Fitting Room UX/UI</h3>
+          </div>
+          <!-- Project Theasy UX/UI -->
+          <div class="item">
+            <a
+              href="https://www.figma.com/file/MNgCdDupUvXPRY3R727hot/Team-Crafters-team-library?type=design&mode=design&t=iOo4vLs1c8qRND04-0"
+            >
+              <img
+                src="./assets/photos/projects/Theasy-YTK-UX.png"
+                alt="Theasy"
+            /></a>
+            <h3>Project Theasy UX/UI</h3>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <h1>Contact - Be partners</h1>
+        <div class="contact_content">
+          <form action="https://api.web3forms.com/submit" method="post">
+            <!-- sent to email -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="362fbef2-35bf-4c50-9540-4dc4d02e7295"
+            />
+            <input type="text" placeholder="Name" name="name" />
+            <input type="email" placeholder="Mail" name="email" />
+            <textarea
+              class="contact_textarea"
+              name="Message"
+              id=""
+              cols="80"
+              rows="10"
+              placeholder="message"
+            ></textarea>
+            <button type="submit" class="btn">Submit &rarr;</button>
+          </form>
+          <img src="./assets/photos/Contact_img.png" alt="contact img" />
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
