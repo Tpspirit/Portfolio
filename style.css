@@ -87,7 +87,9 @@ h1 {
   padding: 150px 100px;
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
   width: 100%;
+  min-width: 500px;
   animation: overview-animate 1s ease;
 }
 
@@ -117,11 +119,11 @@ p {
   font-size: 1rem;
   margin-top: 30px;
   cursor: pointer;
-  transition-duration: 0.5s;
+  transition: all 0.5s ease;
 }
 
 .CV_btn:hover {
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .avatar {
@@ -150,7 +152,7 @@ p {
 .skills_content {
   display: flex;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 3rem;
   flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
@@ -169,7 +171,8 @@ p {
 .html5,
 .css3,
 .javascript,
-.java {
+.java,
+.nodejs {
   font-size: 1.5rem;
   padding: 10px;
   color: #e91e63;
@@ -197,6 +200,10 @@ p {
   font-size: 1.7rem;
 }
 
+.nodejs:hover {
+  color: #6cc24a;
+  font-size: 1.7rem;
+}
 /* projects */
 .projects {
   padding: 100px 30px;
@@ -211,7 +218,7 @@ p {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 50px;
+  gap: 3.1rem;
 }
 
 .projects_content .item {
@@ -260,6 +267,10 @@ p {
   margin-top: 40px;
   width: 50%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact_content form input {
@@ -297,5 +308,40 @@ p {
   font-size: 1.4rem;
   margin-top: 10px;
   cursor: pointer;
-  transition-duration: 0.5s;
+  transition: all 0.5s ease;
+}
+
+.contact_content .btn:hover {
+  opacity: 0.5;
+}
+
+.contact_content img {
+  width: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .overview {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .overview_detail {
+    text-align: center;
+  }
+
+  .skills_content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact_content img {
+    display: none;
+  }
+
+  .contact_content form {
+    width: 100%;
+  }
 }
