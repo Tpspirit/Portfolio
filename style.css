@@ -196,7 +196,7 @@ p {
 
 .skills h1 {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .skills_content {
@@ -263,6 +263,10 @@ p {
 
 /* projects */
 .projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 100px 70px;
   height: auto;
   animation: section-animate 0.3s ease;
@@ -278,7 +282,7 @@ p {
 .projects_content {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3.1rem;
 }
 
@@ -388,11 +392,19 @@ p {
 }
 
 @media only screen and (max-width: 1000px) {
+  section {
+    height: auto;
+  }
+
+  nav {
+    position: static;
+  }
+
   .nav-links {
     display: none;
   }
 
-  nav > a {
+  nav > img {
     margin: 0 auto;
   }
 
@@ -401,19 +413,31 @@ p {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    width: 100%;
+    padding: 80px 30px;
   }
 
   .overview_detail {
+    width: 300px;
     text-align: center;
   }
 
   .skills_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
   }
 
   .projects_content {
     gap: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .projects_content .item {
+    max-width: 200px;
   }
 
   .projects_content .item:hover {

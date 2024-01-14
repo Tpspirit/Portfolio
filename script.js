@@ -5,7 +5,7 @@ var type = new Typed(".auto_text", {
   loop: true,
 });
 
-// refresh to top
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-};
+const a = document.querySelectorAll(".projects a");
+for (let i = 0; i < a.length; i++) {
+  a[i].target = "_blank";
+}
