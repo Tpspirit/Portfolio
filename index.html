@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <script src="script.js"></script>
     <nav>
       <img class="logo" src="./assets/photos/logo.PNG" alt="logo" />
       <ul class="nav-links">
@@ -20,15 +23,20 @@
 
     <div class="container">
       <!-- Overview -->
-      <section id="#home" class="overview">
-        <img
-          class="avatar"
-          src="./assets/photos/avatar.jpg"
-          alt="avatar.jpeg"
-        />
+      <section id="home" class="overview">
+        <div class="overview_card">
+          <img
+            class="avatar"
+            src="./assets/photos/avatar.jpg"
+            alt="avatar.jpeg"
+          />
+          <h2 class="name">Khoi Phan</h2>
+          <!-- <h3>14/03/2002</h3>
+          <h3>Helsinki, Finland</h3> -->
+        </div>
+
         <div class="overview_detail">
-          <h1 class="name">Hi, I'm Khoi Phan</h1>
-          <h1 class="title">Front-End Developer <br />UX/UI designer</h1>
+          <h1 class="title"><span class="auto_text"></span></h1>
 
           <p>
             I'm a front-end programmer who create professional and minimal web
@@ -45,11 +53,15 @@
       <section id="skills" class="skills">
         <h1>Skills</h1>
         <div class="skills_content">
-          <h3 class="html5">HTML5</h3>
-          <h3 class="css3">CSS3</h3>
-          <h3 class="javascript">Javascript</h3>
-          <h3 class="java">Java</h3>
-          <h3 class="nodejs">Nodejs</h3>
+          <h3 class="html5">HTML5<i class="bx bxl-html5"></i></h3>
+          <h3 class="css3">CSS3<i class="bx bxl-css3"></i></h3>
+          <h3 class="javascript">
+            Javascript<i class="bx bxl-javascript"></i>
+          </h3>
+          <h3 class="java">Java<i class="bx bxl-java"></i></h3>
+          <h3 class="nodejs">Nodejs<i class="bx bxl-nodejs"></i></h3>
+          <h3 class="jquery">jQuery<i class="bx bxl-jquery"></i></h3>
+          <h3 class="figma">Figma<i class="bx bxl-figma"></i></h3>
         </div>
       </section>
 
@@ -151,5 +163,7 @@
         </div>
       </section>
     </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
